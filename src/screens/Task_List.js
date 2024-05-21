@@ -7,8 +7,8 @@ export default class TaskList extends Component{
     render(){
         return(
             <View style={styles.container}>
-                <ImageBackground source={today_Image}></ImageBackground>
-                <View></View>
+                <ImageBackground source={today_Image} style={styles.background}></ImageBackground>
+                <View style={styles.taskList}></View>
             </View>
         )
     }
