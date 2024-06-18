@@ -7,10 +7,11 @@ import 'moment/locale/pt-br'
 export default props =>{
     return(
         <View style={styles.container}>
-            <Text style={styles.desc}>Descrição da tarefa</Text>
-            <Text style={styles.date}>Data estimada conclusão</Text>
-            <Text style={styles.date}>Data conclusão</Text>
+            <Text style={styles.desc}>{props.description}</Text>
+            <Text style={styles.date}>{props.estimate_at}</Text>
+            <Text style={styles.date}>{props.done_at}</Text>
         </View>
+
     )
 }
 
