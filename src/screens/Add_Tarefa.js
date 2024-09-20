@@ -22,8 +22,18 @@ export default class Add_Tarefa extends Component{
                     <View style={styles.fundo}></View>
                 </TouchableWithoutFeedback>
                 <View style={styles.principal}>
-                    <Text>Nova Tarefa</Text>
-                    <TextInput/>
+                    <Text style={styles.cabecalho}>Nova Tarefa</Text>
+                    <TextInput
+                        placeholder="Descrição da Tarefa"
+                    />
+                    <View>
+                        <TouchableOpacity>
+                            <Text>CANCELAR</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <Text>SALVAR</Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
                 <TouchableWithoutFeedback> 
                     <View style={styles.fundo}></View>
@@ -41,5 +51,13 @@ const styles = StyleSheet.create({
     principal:{
         flex: 1,
         backgroundColor: '#FFF'
+    },
+    cabecalho:{
+        backgroundColor: "#B13B44",
+        color: '#FFF',
+        textAlign: 'center',
+        padding: 20,
+        fontSize: 25
     }
+
 })
