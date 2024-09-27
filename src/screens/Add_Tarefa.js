@@ -86,6 +86,14 @@ const styles = StyleSheet.create({
         margin: 20,
         marginRight: 30,
         color: '#B13B44'
+    },
+    container: {
+        flexDirection: 'row',
+        alignItens: 'center',
+        marginLeft: 15,
+        paddingVertical: 10
+    },
+    data: {
+        margin: 10,
     }
-
 })
