@@ -28,22 +28,23 @@ export default class Add_Tarefa extends Component{
                 </TouchableWithoutFeedback>
                 <View style={styles.principal}>
                     <Text style={styles.cabecalho}>Nova Tarefa</Text>
-                    <View>
+                    <View style={styles.container}>
                         <Icon name="clipboard-check" size={25}></Icon>
                         <TextInput
+                            style={styles.input}
                             placeholder="Descrição da Tarefa"
                         />
                     </View>
-                    <TouchableOpacity>
+                    <TouchableOpacity style={styles.container}>
                         <Icon name="calendar" size={25}></Icon>
-                        <Text>{data_formatada}</Text>
+                        <Text style={styles.data}>{data_formatada}</Text>
                     </TouchableOpacity>
-                    <View>
+                    <View style={styles.botoes}>
                         <TouchableOpacity>
-                            <Text>CANCELAR</Text>
+                            <Text style={styles.botao}>CANCELAR</Text>
                         </TouchableOpacity>
                         <TouchableOpacity>
-                            <Text>SALVAR</Text>
+                            <Text style={styles.botao}>SALVAR</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
