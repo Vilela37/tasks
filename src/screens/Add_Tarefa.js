@@ -9,6 +9,10 @@ import {
     Modal // tela sobreposta,"tipo" alert/camada
 } from "react-native"
 
+import Icon from "react-native-vector-icons";
+import moment from "moment";
+import DateTimePicker from "@react-native-community/datetimepicker";
+
 export default class Add_Tarefa extends Component{
     render(){
         return(
