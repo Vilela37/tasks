@@ -15,6 +15,7 @@ import DateTimePicker from "@react-native-community/datetimepicker";
 
 export default class Add_Tarefa extends Component{
     render(){
+        const data_formatada = moment(new Date()).format('ddd, D [de] MMMM [de] YYYY')
         return(
             <Modal
                 transparent={true}
@@ -27,9 +28,16 @@ export default class Add_Tarefa extends Component{
                 </TouchableWithoutFeedback>
                 <View style={styles.principal}>
                     <Text style={styles.cabecalho}>Nova Tarefa</Text>
-                    <TextInput
-                        placeholder="Descrição da Tarefa"
-                    />
+                    <View>
+                        <Icon name="clipboard-check" size={25}></Icon>
+                        <TextInput
+                            placeholder="Descrição da Tarefa"
+                        />
+                    </View>
+                    <TouchableOpacity>
+                        <Icon name="calendar" size={25}></Icon>
+                        <Text>{data_formatada}</Text>
+                    </TouchableOpacity>
                     <View>
                         <TouchableOpacity>
                             <Text>CANCELAR</Text>
