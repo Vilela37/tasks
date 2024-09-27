@@ -70,6 +70,22 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         padding: 20,
         fontSize: 25
+    },
+    input:{
+        width: '85%',
+        margin: 15,
+        borderWidth: 1,
+        borderColor: '#E3E3E3',
+        borderRadius: 6
+    },
+    botoes:{
+        flexDirection: 'row',
+        justifyContent: 'flex-end'
+    },
+    botao: {
+        margin: 20,
+        marginRight: 30,
+        color: '#B13B44'
     }
 
 })
